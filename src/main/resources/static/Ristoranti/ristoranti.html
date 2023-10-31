@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Elenco ristoranti</title>
+    <script type="text/javascript" src="../js/validate.js"></script>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>Nome</th>
+            <th>Descrizione</th>
+            <th>Ubicazione</th>
+        </tr>
+        <tr>
+            <td>Ristorante/Pizzeria  le Casette di Zio Santino</td>
+            <td>In questo ristorante si cucina un pò di tutto ed offre anche ampie varietà di pizze</td>
+            <td>Cosenza</td>
+        </tr>
+        <tr>
+        <tr>
+            <td>Il castello</td>
+            <td>In questo ristorante si cucina male</td>
+            <td>Nicotera</td>
+        </tr>
+        <tr>
+            <td>Lilla</td>
+            <td>In questo ristorante si cucina nutella</td>
+            <td>Udine</td>
+        </tr>
+        </tr>
+    </table>
+    <div>
+        <h3>Aggiungi un nuovo ristorante </h3>
+        <form method="post" action="../addRistorante">
+            <label for="nome_rist">Nome Ristorante:</label>
+            <input id="nome_rist" type="text" name="nome_ristorante" />
+            <br>
+            <label for="desc_rist">Descrizione Ristorante:</label>
+            <textarea id="desc_rist" placeholder="Inserisci la descrizione" name="Descrizione">
+
+            </textarea>
+            <br>
+            <label for="Ub_ristorante">Ubicazione ristorante:</label>
+            <select id="Ub_ristorante" name="Ubicazione_ristorante">
+                <option value="Rende">Rende</option>
+                <option value="Cosenza">Cosenza</option>
+                <option value="Castrolibero">Castrolibero</option>
+            </select>
+            <br>
+            <input type="button" value="verifica Dati" onclick="verificaRistorante()" />
+            <input type="submit" />
+            <input type="reset">
+
+        </form>
+    </div>
+</body>
+</html>

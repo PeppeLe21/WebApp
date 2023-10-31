@@ -1,0 +1,71 @@
+body{
+    background-color: aquamarine;
+}
+
+h1{
+    text-shadow: 2px 2px white; /*due punti a destra, due punti in basso*/
+}
+
+nav li{
+    display: inline;
+    padding: 20px;
+}
+
+nav li>a:link, nav li>a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+/*nav a:link, nav a:visited{
+    color: white;
+    text-decoration: none;
+}*/
+
+article{
+    width: 50%;
+    float: left;
+    overflow: hidden;
+}
+
+nav li:hover{
+    background-color: rebeccapurple;
+}
+
+header{
+    text-align: center;
+    clear: left;
+}
+
+/*
+    text-align: right;
+}*/
+
+/*
+img{
+    #logo --> tramite id dell'immagine
+    round --> tramite classe (prende tutti quelli con la classe specificata)
+    header img --> prende tutte le immagini dentro l'header
+    header>img --> prende il primo "figlio" dell'header
+ */
+
+header img{
+    border-style: solid;
+    border-radius: 100%;
+}
+
+footer{
+    clear: left;
+}
+
+@media screen and (max-width: 800px) {
+    /*article{
+        background-color: blue;
+    }*/
+    nav li{
+        display: block;
+    }
+    article{
+        width: 100%;
+        float: none;
+    }
+}
